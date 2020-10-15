@@ -28,7 +28,7 @@ test:
     - ls -laR cypress
     # print coverage summary so that GitLab CI can parse the coverage number
     # from a string like "Statements   : 100% ( 135/135 )"
-    - npx nyc report --reporter=text-summary
+    - npx nyc report --reporter=text-summary 
   artifacts:
     when: always
     paths:
